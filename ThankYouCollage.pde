@@ -1,4 +1,14 @@
 //add thank you code here
+@pjs preload="download.jpg";
+@pjs preload="download (1).jpg";
+@pjs preload="download (2).jpg";
+@pjs preload="images.jpg";
+@pjs preload="gcn controller.png";
+@pjs preload="controller.png";
+@pjs preload="wii.png";
+@pjs preload="laptop.png";
+@pjs preload="ultrawide monitor";
+
 void setup () {
   size(600,600);
 }
