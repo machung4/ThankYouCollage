@@ -7,7 +7,7 @@
 @pjs preload="controller.png";
 @pjs preload="wii.png";
 @pjs preload="laptop.png";
-@pjs preload="ultrawide monitor";/*
+@pjs preload="ultrawide monitor";*/
 
 void setup () {
   size(600,600);
