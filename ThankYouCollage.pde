@@ -14,7 +14,7 @@ void setup () {
   size(600,600);
 
 }
-  String s = "download.jpg";
+  String s = "ssbb.jpg";
   String x = "gcncontroller.png";
   
 void draw () {
