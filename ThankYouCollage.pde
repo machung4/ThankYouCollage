@@ -1,21 +1,21 @@
 //add thank you code here
 
-void setup () {
-  size(600,600);
-
-/*@pjs preload="download.jpg";*/
-/*@pjs preload="download (1).jpg";*/
-/*@pjs preload="download (2).jpg";*/
-/*@pjs preload="images.jpg";*/
-/*@pjs preload="gcn controller.png";*/
+/*@pjs preload="ssbb.jpg";*/
+/*@pjs preload="overwatch.jpg";*/
+/*@pjs preload="smg.jpg";*/
+/*@pjs preload="mkwii.jpg";*/
+/*@pjs preload="gcncontroller.png";*/
 /*@pjs preload="controller.png";*/
 /*@pjs preload="wii.png";*/
 /*@pjs preload="laptop.png";*/
-/*@pjs preload="ultrawide monitor";*/
+/*@pjs preload="ultrawidemonitor";*/
+
+void setup () {
+  size(600,600);
 
 }
   String s = "download.jpg";
-  String x = "gcn controller.png";
+  String x = "gcncontroller.png";
   
 void draw () {
   background(0);
@@ -27,7 +27,7 @@ void draw () {
   textAlign(CENTER);
   text("Thank You",300,75);
   
-  monitor = loadImage("ultrawide monitor.png");
+  monitor = loadImage("ultrawidemonitor.png");
   controller = loadImage(x);
   
   
@@ -44,21 +44,21 @@ void draw () {
 
 void mousePressed() {
   
-  if (s == "download.jpg") {
-        s = "images.jpg"; 
-    } else if (s == "images.jpg") {
-        s = "download (2).jpg"; 
-    } else if (s == "download (2).jpg") {
-        s = "download (1).jpg"; 
+  if (s == "ssbb.jpg") {
+        s = "mkwii.jpg"; 
+    } else if (s == "mkwii.jpg") {
+        s = "smg.jpg"; 
+    } else if (s == "smg.jpg") {
+        s = "overwatch.jpg"; 
     } else{
-      s = "download.jpg";
+      s = "ssbb.jpg";
     }
     
-      if (s == "download.jpg") {
-        x = "gcn controller.png"; 
-    } else if (s == "images.jpg") {
+      if (s == "ssbb.jpg") {
+        x = "gcncontroller.png"; 
+    } else if (s == "mkwii.jpg") {
         x = "controller.png"; 
-    } else if (s == "download (2).jpg") {
+    } else if (s == "smg.jpg") {
         x = "wii.png"; 
     } else{
       x = "laptop.png";
