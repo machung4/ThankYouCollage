@@ -10,32 +10,31 @@
 /*@pjs preload="laptop.png";*/
 /*@pjs preload="ultrawidemonitor";*/
 
+String s = "ssbb.jpg";
+String x = "gcncontroller.png";
+PImage monitor;
+PImage controller;
+PImage videogame;
+
 void setup () {
   size(600,600);
+  monitor = loadImage("ultrawidemonitor.png");
+  controller = loadImage(x);
+  videogame = loadImage(s);
+ }
 
-}
-  String s = "ssbb.jpg";
-  String x = "gcncontroller.png";
   
 void draw () {
   background(0);
-  PImage monitor;
-  PImage controller;
+
   
   fill(255);
   textSize(75);
   textAlign(CENTER);
   text("Thank You",300,75);
-  
-  monitor = loadImage("ultrawidemonitor.png");
-  controller = loadImage(x);
-  
-  
+    
   image(monitor,150,200);
   image(controller,175,375);
-  
-  PImage videogame;
-  videogame = loadImage(s);
   image(videogame,155,205,285,120); 
  
   fill(0,mouseX-mouseY);
